@@ -1,6 +1,9 @@
 <?php
 namespace W6\WpSeo;
 
+/**
+ * Singleton
+ */
 trait Singleton
 {
     private static $instance = null;
@@ -19,6 +22,6 @@ trait Singleton
 
     public static function instance()
     {
-        return self::$instance===null ? self::$instance = new static() : self::$instance;
+        return self::$instance === null ? self::$instance = new static() : self::$instance;
     }
 }

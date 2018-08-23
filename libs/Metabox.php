@@ -1,8 +1,20 @@
 <?php
 namespace W6\WpSeo;
 
+/**
+ * Metabox
+ */
 class Metabox
 {
+    /**
+     * Init metabox
+     */
+    public static function init()
+    {
+        // Create the seo metabox
+        add_action('add_meta_boxes', '\W6\WpSeo\Metabox::add');
+    }
+
     /**
      * Create the seo metabox
      */
