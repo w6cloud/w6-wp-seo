@@ -1,0 +1,20 @@
+{
+    "name": "w6/wp-seo",
+    "description": "Wordpress SEO plugin",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WEB6",
+            "email": "contact@web6.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "W6\\WpSeo\\": "libs/"
+        }
+    }
+}
