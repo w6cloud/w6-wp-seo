@@ -20,5 +20,33 @@ namespace W6\Wp_Seo;
  */
 class Activator {
 
-	
+	/**
+	 * Acivatior initiation
+	 *
+	 * Register hooks
+	 *
+	 * @return void
+	 */
+	public static function init() {
+		register_activation_hook( W6_WP_SEO_ROOT . '/w6-wp-seo.php', '\W6\Wp_Seo\Activator::activate' );
+		register_deactivation_hook( W6_WP_SEO_ROOT . '/w6-wp-seo.php', '\W6\Wp_Seo\Activator::deactivate' );
+	}
+
+	/**
+	 * Plugin activation
+	 *
+	 * @link https://codex.wordpress.org/Function_Reference/register_activation_hook
+	 * @return void
+	 */
+	public static function activate() {
+	}
+
+	/**
+	 * Plugin deactivation
+	 *
+	 * @link https://codex.wordpress.org/Function_Reference/register_deactivation_hook
+	 * @return void
+	 */
+	public static function deactivate() {
+	}
 }

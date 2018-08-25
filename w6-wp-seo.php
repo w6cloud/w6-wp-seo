@@ -56,34 +56,4 @@ require_once 'vendor/autoload.php';
 /**
  * Init plugin
  */
-\W6\Wp_Seo\Wp_Seo::init();
-
-/**
- * The code that runs during plugin activation.
- * This action is documented in includes/class-plugin-name-activator.php
- */
-/*
-function activate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-activator.php';
-	Plugin_Name_Activator::activate();
-}
-register_activation_hook( __FILE__, 'activate_plugin_name' );
-*/
-
-/**
- * The code that runs during plugin deactivation.
- * This action is documented in includes/class-plugin-name-deactivator.php
-function deactivate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-deactivator.php';
-	Plugin_Name_Deactivator::deactivate();
-}
-register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
- */
-
-
-/**
- * The core plugin class that is used to define internationalization,
- * admin-specific hooks, and public-facing site hooks.
-require plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name.php';
- */
-
+add_action( 'init', '\W6\Wp_Seo\Wp_Seo::init' );
