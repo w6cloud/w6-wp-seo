@@ -69,6 +69,7 @@ class Admin_Post {
 	/**
 	 * Save the metabox
 	 *
+	 * @link https://codex.wordpress.org/Function_Reference/update_post_meta
 	 * @param int $post_id Post ID.
 	 * @return void
 	 */
@@ -104,6 +105,7 @@ class Admin_Post {
 	/**
 	 * Add script & stylesheet to admin area
 	 *
+	 * @link https://developer.wordpress.org/reference/functions/wp_enqueue_style/
 	 * @return void
 	 */
 	public static function scripts() {

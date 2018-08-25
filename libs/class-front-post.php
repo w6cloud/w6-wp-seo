@@ -67,7 +67,7 @@ class Front_Post {
 	 */
 	public static function meta_tags() {
 		global $post;
-		$out = '';
+		$out  = '';
 		$desc = get_post_meta( $post->ID, '_w6wpseo_page_description', true );
 		if ( ! empty( $desc ) ) {
 			$out .= '<meta name="description" content="' . $desc . '" />';
@@ -76,6 +76,6 @@ class Front_Post {
 		if ( ! empty( $keywords ) ) {
 			$out .= '<meta name="keywords" content="' . $desc . '" />';
 		}
-		echo $out;
+		echo esc_attr( $out );
 	}
 }
