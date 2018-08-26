@@ -29,6 +29,7 @@ class Wp_Seo {
 	public static function init() {
 		if ( is_admin() ) {
 			Admin_Post::init();
+			Admin_Settings::init();
 		} else {
 			Front_Post::init();
 		}
