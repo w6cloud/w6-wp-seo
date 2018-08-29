@@ -12,12 +12,14 @@
  * @link      https://github.com/web6-fr/w6-wp-seo
  */
 
+namespace W6\Wp_Seo;
+
 /**
  * Autoload
  *
  * @param string $class_name Class name.
  */
-function w6wpseo_autoload( $class_name ) {
+function autoload( $class_name ) {
 
 	if ( false === strpos( $class_name, 'W6\Wp_Seo' ) ) {
 		return;
@@ -35,7 +37,7 @@ function w6wpseo_autoload( $class_name ) {
 	);
 
 	foreach ( $types as $type ) {
-		$_path = W6_WP_SEO_ROOT . '/' . str_replace( 'w6/wp-seo/', 'libs/' . $type . '-', $path ) . '.php';
+		$_path = ROOT . '/' . str_replace( 'w6/wp-seo/', 'libs/' . $type . '-', $path ) . '.php';
 		if ( file_exists( $_path ) ) {
 			require_once $_path;
 			break;

@@ -31,12 +31,12 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Plugin version.
  */
-define( 'W6_WP_SEO_VERSION', '1.0.0' );
+define( 'W6\Wp_Seo\VERSION', '1.0.0' );
 
 /**
- * Plugin version.
+ * Plugin root folder.
  */
-define( 'W6_WP_SEO_ROOT', dirname( __FILE__ ) );
+define( 'W6\Wp_Seo\ROOT', dirname( __FILE__ ) );
 
 /**
  * Functions
@@ -46,7 +46,7 @@ require_once 'libs/functions.php';
 /**
  * Autoload
  */
-spl_autoload_register( 'w6wpseo_autoload' );
+spl_autoload_register( '\W6\Wp_Seo\autoload' );
 
 /**
  * Composer
