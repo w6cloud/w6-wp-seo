@@ -28,8 +28,9 @@ class Activator {
 	 * @return void
 	 */
 	public static function init() {
-		register_activation_hook( W6_WP_SEO_ROOT . '/w6-wp-seo.php', '\W6\Wp_Seo\Activator::activate' );
-		register_deactivation_hook( W6_WP_SEO_ROOT . '/w6-wp-seo.php', '\W6\Wp_Seo\Activator::deactivate' );
+		$plugin_file = FS::path( 'w6-wp-seo.php' );
+		register_activation_hook( $plugin_file, '\W6\Wp_Seo\Activator::activate' );
+		register_deactivation_hook( $plugin_file, '\W6\Wp_Seo\Activator::deactivate' );
 	}
 
 	/**
@@ -43,7 +44,7 @@ class Activator {
 
 	/**
 	 * Plugin deactivation
-	 *
+	 * @todo If setting delete data on deactivate
 	 * @link https://codex.wordpress.org/Function_Reference/register_deactivation_hook
 	 * @return void
 	 */
