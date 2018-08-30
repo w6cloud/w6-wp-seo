@@ -11,6 +11,10 @@
  * @link      https://github.com/web6-fr/w6-wp-seo
  */
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
 ?>
 <input 
 	name="w6wpseo_settings[w6wpseo_post_type_post]" 

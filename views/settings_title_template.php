@@ -11,5 +11,9 @@
  * @link      https://github.com/web6-fr/w6-wp-seo
  */
 
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
 ?>
 <input type="text" name="w6wpseo_settings[w6wpseo_title_template]" value="<?php echo $options['w6wpseo_title_template']; ?>">
