@@ -75,7 +75,7 @@ class Admin_Post {
 	 */
 	public static function save( $post_id ) {
 
-		$data = wp_unlash( $_POST );
+		$data = wp_unslash( $_POST );
 
 		if ( ! isset( $data['w6wpseo_meta_box_nonce'] ) || ! wp_verify_nonce( $data['w6wpseo_meta_box_nonce'], basename( __FILE__ ) ) ) {
 			return;
