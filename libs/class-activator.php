@@ -44,6 +44,7 @@ class Activator {
 
 	/**
 	 * Plugin deactivation
+	 *
 	 * @todo If setting delete data on deactivate
 	 * @link https://codex.wordpress.org/Function_Reference/register_deactivation_hook
 	 * @return void
