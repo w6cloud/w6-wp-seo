@@ -11,7 +11,7 @@
  * @link      https://github.com/web6-fr/w6-wp-seo
  */
 
-namespace W6\Wp_Seo;
+namespace W6\Wp_Seo\Utils;
 
 /**
  * Singleton

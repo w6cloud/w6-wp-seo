@@ -56,4 +56,4 @@ require_once 'vendor/autoload.php';
 /**
  * Init plugin
  */
-add_action( 'init', '\W6\Wp_Seo\Wp_Seo::init' );
+\W6\Wp_Seo\Wp_Seo::init();

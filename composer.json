@@ -20,7 +20,8 @@
         "docs": "https://github.com/web6-fr/w6-wp-seo/wiki"
     },
     "require": {
-        "php": ">=5.4"
+        "php": ">=5.4",
+        "gambitph/titan-framework": "^1.12"
     },
     "require-dev": {
         "wp-coding-standards/wpcs": "^1.0"

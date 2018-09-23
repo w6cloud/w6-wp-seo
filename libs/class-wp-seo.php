@@ -15,21 +15,39 @@
 
 namespace W6\Wp_Seo;
 
+use \W6\Wp_Seo\Utils\File_System as FS;
+
 /**
  * This class handles the plugin's initialisation
  *
  * @package   W6\Wp_Seo\Wp_Seo
  */
 class Wp_Seo {
+
+	use Utils\Singleton;
+
+	/**
+	 * Titan fralework instance
+	 * 
+	 * @var TitanFramework     
+	 */
+	public $titan;
+
 	/**
 	 * Plugin initiation
 	 *
 	 * @return void
 	 */
 	public static function init() {
+
+		$t = self::instance();
+
+		require_once FS::path( 'vendor/gambitph/titan-framework/titan-framework-embedder.php' );
+		$t->titan = \TitanFramework::getInstance( 'w6-wp-seo' );
+
 		if ( is_admin() ) {
-			Admin_Post::init();
-			Admin_Settings::init();
+			Admin\Panels::init();
+			Admin\Metaboxes::init();
 		} else {
 			Front_Post::init();
 		}

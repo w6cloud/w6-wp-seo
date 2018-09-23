@@ -1,7 +1,8 @@
 {
-    "phpcs.executablePath": "./vendor/bin/phpcs",
     "editor.insertSpaces": false,
-    "phpcbf.executablePath": "./vendor/bin/phpcbf",
+    "phpcbf.executablePath": "/home/pierre/Documents/Projets/w6-wp-seo/vendor/bin/phpcbf",
     "phpcbf.onsave": true,
-    "phpcbf.standard": "WordPress"
+    "phpcbf.standard": "WordPress",
+    "phpcs.standard": "WordPress",
+    "phpcs.executablePath": "/usr/bin/phpcs"
 }

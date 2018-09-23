@@ -25,10 +25,16 @@ function autoload( $class_name ) {
 		return;
 	}
 
-	$path = str_replace( '_', '-', $class_name );
-	$path = str_replace( '\\', '/', $path );
-	$path = ltrim( $path, '/' );
-	$path = strtolower( $path );
+	$parts = explode( '\\', $class_name );
+	$parts = array_filter($parts);
+
+	$basename = array_pop( $parts );
+	$basename = str_replace( '_', '-', $basename );
+	$basename = strtolower( $basename );
+
+	$path = implode( '/', $parts );
+	$path = str_replace( 'W6/Wp_Seo', 'libs', $path );
+	$path = ROOT . '/' . $path;
 
 	$types = array(
 		'class',
@@ -37,7 +43,7 @@ function autoload( $class_name ) {
 	);
 
 	foreach ( $types as $type ) {
-		$_path = ROOT . '/' . str_replace( 'w6/wp-seo/', 'libs/' . $type . '-', $path ) . '.php';
+		$_path = $path . '/' . $type . '-' . $basename . '.php';
 		if ( file_exists( $_path ) ) {
 			require_once $_path;
 			break;

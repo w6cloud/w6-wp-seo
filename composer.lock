@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "362d87def94b229421b287805533892e",
-    "packages": [],
+    "content-hash": "7b02a40dad7e621ad3e35e264303bb43",
+    "packages": [
+        {
+            "name": "gambitph/titan-framework",
+            "version": "1.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gambitph/Titan-Framework.git",
+                "reference": "e83f3dd73e914d17ca7ee24dbe0cccc123d482fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gambitph/Titan-Framework/zipball/e83f3dd73e914d17ca7ee24dbe0cccc123d482fc",
+                "reference": "e83f3dd73e914d17ca7ee24dbe0cccc123d482fc",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "titan-framework.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2+"
+            ],
+            "authors": [
+                {
+                    "name": "Gambit Technologies",
+                    "email": "info@gambit.ph",
+                    "homepage": "http://www.titanframework.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Titan Framework allows theme and plugin developers to create admin pages, options, meta boxes, and theme customizer options with just a few simple lines of code.",
+            "homepage": "https://github.com/gambitph/Titan-Framework",
+            "keywords": [
+                "Titan Framework",
+                "framework",
+                "options",
+                "titan",
+                "wordpress"
+            ],
+            "time": "2018-07-03T03:26:39+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",

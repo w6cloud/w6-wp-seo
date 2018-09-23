@@ -11,7 +11,7 @@
  * @link      https://github.com/web6-fr/w6-wp-seo
  */
 
-namespace W6\Wp_Seo;
+namespace W6\Wp_Seo\Utils;
 
 /**
  * Working with file system
@@ -25,7 +25,7 @@ class File_System {
 	 * @return string The full path
 	 */
 	public static function path( $path = null ) {
-		return trailingslashit( dirname( dirname( __FILE__ ) ) ) . ltrim( $path, '/\\' );
+		return trailingslashit( \W6\Wp_Seo\ROOT ) . ltrim( $path, '/\\' );
 	}
 
 	/**
