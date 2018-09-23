@@ -37,3 +37,6 @@ $ composer install
 $ vendor/bin/phpcs --config-set installed_paths ./vendor/wp-coding-standards/wpcs
 ```
 
+## Todo
+
+- Create a character counter for the fields

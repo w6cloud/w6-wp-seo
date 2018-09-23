@@ -29,10 +29,24 @@ class General {
 	 */
 	public static function init( $panel ) {
 
-		$panel->createTab(array(
+		$tab = $panel->createTab(array(
 			'name' => __( 'General', 'w6-wp-seo' ),
 			'desc' => __( 'General settings', 'w6-wp-seo' ),
 		));
+
+
+		// Content types.
+		$tab->createOption( array(
+			'name' => __( 'Content types', 'w6-wp-seo' ),
+			'id'   => 'general_content_types',
+			'type' => 'multicheck-post-types',
+			'desc' => __( 'Check the post types you want to optimize. ', 'w6-wp-seo' ),
+		) );
+
+		// Meta tags - Save button.
+		$tab->createOption( array(
+			'type' => 'save',
+		) );
 
 	}
 }
