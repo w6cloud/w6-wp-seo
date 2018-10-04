@@ -42,7 +42,9 @@ class Wp_Seo {
 
 		$t = self::instance();
 
-		require_once FS::path( 'vendor/gambitph/titan-framework/titan-framework-embedder.php' );
+		if(!class_exists('\TitanFramework')){
+			require_once FS::path( 'vendor/gambitph/titan-framework/titan-framework-embedder.php' );
+		}
 		$t->titan = \TitanFramework::getInstance( 'w6-wp-seo' );
 
 		if ( is_admin() ) {
