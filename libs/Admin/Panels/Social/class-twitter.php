@@ -31,15 +31,15 @@ class Twitter {
 
 		$tab = $panel->createTab(array(
 			'name' => 'Twitter',
-			'desc' => __( 'Twitter settings', 'w6-wp-seo' ),
+			'desc' => esc_html__( 'Twitter settings', 'w6-wp-seo' ),
 		));
 
 		// Title.
 		$tab->createOption( array(
-			'name' => __( 'Title', 'w6-wp-seo' ),
+			'name' => esc_html__( 'Title', 'w6-wp-seo' ),
 			'id'   => 'twitter_title_template',
 			'type' => 'text',
-			'desc' => __( 'Enter the default page preview title. Available tags : {SEO_TITLE}, {TITLE}, {SITE_NAME}. Leave empty to use default. Default : {SEO_TITLE}.', 'w6-wp-seo' ),
+			'desc' => esc_html__( 'Enter the default page preview title. Available tags : {SEO_TITLE}, {TITLE}, {SITE_NAME}. Leave empty to use default. Default : {SEO_TITLE}.', 'w6-wp-seo' ),
 		) );
 
 		// Save button.

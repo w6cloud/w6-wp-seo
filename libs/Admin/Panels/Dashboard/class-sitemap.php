@@ -30,8 +30,8 @@ class Sitemap {
 	public static function init( $panel ) {
 
 		$panel->createTab(array(
-			'name' => __( 'Sitemap', 'w6-wp-seo' ),
-			'desc' => __( 'Configure sitemap options', 'w6-wp-seo' ),
+			'name' => esc_html__( 'Sitemap', 'w6-wp-seo' ),
+			'desc' => esc_html__( 'Configure sitemap options', 'w6-wp-seo' ),
 		));
 
 	}

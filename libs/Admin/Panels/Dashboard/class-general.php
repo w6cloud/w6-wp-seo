@@ -30,17 +30,17 @@ class General {
 	public static function init( $panel ) {
 
 		$tab = $panel->createTab(array(
-			'name' => __( 'General', 'w6-wp-seo' ),
-			'desc' => __( 'General settings', 'w6-wp-seo' ),
+			'name' => esc_html__( 'General', 'w6-wp-seo' ),
+			'desc' => esc_html__( 'General settings', 'w6-wp-seo' ),
 		));
 
 
 		// Content types.
 		$tab->createOption( array(
-			'name' => __( 'Content types', 'w6-wp-seo' ),
+			'name' => esc_html__( 'Content types', 'w6-wp-seo' ),
 			'id'   => 'general_content_types',
 			'type' => 'multicheck-post-types',
-			'desc' => __( 'Check the post types you want to optimize. ', 'w6-wp-seo' ),
+			'desc' => esc_html__( 'Check the post types you want to optimize. ', 'w6-wp-seo' ),
 		) );
 
 		// Meta tags - Save button.

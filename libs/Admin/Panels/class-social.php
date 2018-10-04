@@ -30,8 +30,8 @@ class Social {
 	public static function init( $options_page ) {
 
 		$panel = $options_page->createAdminPanel(array(
-			'name' => __( 'Social', 'w6-wp-seo' ),
-			'desc' => __( 'Description displayed just below the title of this admin page.', 'w6-wp-seo' ),
+			'name' => esc_html__( 'Social', 'w6-wp-seo' ),
+			'desc' => esc_html__( 'Description displayed just below the title of this admin page.', 'w6-wp-seo' ),
 		));
 
 		Social\Facebook::init( $panel );

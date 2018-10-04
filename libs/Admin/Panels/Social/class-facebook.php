@@ -31,39 +31,39 @@ class Facebook {
 
 		$tab = $panel->createTab(array(
 			'name' => 'Facebook',
-			'desc' => __( 'Facebook settings', 'w6-wp-seo' ),
+			'desc' => esc_html__( 'Facebook settings', 'w6-wp-seo' ),
 		));
 
 		// URL.
 		$tab->createOption( array(
-			'name'    => __( 'URL', 'w6-wp-seo' ),
+			'name'    => esc_html__( 'URL', 'w6-wp-seo' ),
 			'id'      => 'facebook_url',
 			'type'    => 'select',
-			'desc'    => __( 'Select the default url source.', 'w6-wp-seo' ),
+			'desc'    => esc_html__( 'Select the default url source.', 'w6-wp-seo' ),
 			'options' => array(
-				'permalink' => __( 'Permalink', 'w6-wp-seo' )
+				'permalink' => esc_html__( 'Permalink', 'w6-wp-seo' )
 			),
 			'default' => 'permalink',
 		) );
 
 		// Type.
 		$tab->createOption( array(
-			'name'    => __( 'Type', 'w6-wp-seo' ),
+			'name'    => esc_html__( 'Type', 'w6-wp-seo' ),
 			'id'      => 'facebook_type_template',
 			'type'    => 'select',
-			'desc'    => __( 'Select the default Facebook type.', 'w6-wp-seo' ),
+			'desc'    => esc_html__( 'Select the default Facebook type.', 'w6-wp-seo' ),
 			'options' => array(
-				'auto'    => __( 'Automatic', 'w6-wp-seo' ),
-				'article' => __( 'Article', 'w6-wp-seo' ),
+				'auto'    => esc_html__( 'Automatic', 'w6-wp-seo' ),
+				'article' => esc_html__( 'Article', 'w6-wp-seo' ),
 			),
 		) );
 
 		// Title.
 		$tab->createOption( array(
-			'name' => __( 'Title', 'w6-wp-seo' ),
+			'name' => esc_html__( 'Title', 'w6-wp-seo' ),
 			'id'   => 'facebook_title_template',
 			'type' => 'text',
-			'desc' => __( 'Enter the default page preview title. Available tags : {SEO_TITLE}, {TITLE}, {SITE_NAME}. Leave empty to use default. Default : {SEO_TITLE}.', 'w6-wp-seo' ),
+			'desc' => esc_html__( 'Enter the default page preview title. Available tags : {SEO_TITLE}, {TITLE}, {SITE_NAME}. Leave empty to use default. Default : {SEO_TITLE}.', 'w6-wp-seo' ),
 		) );
 
 		// Save button.

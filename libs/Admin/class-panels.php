@@ -37,9 +37,9 @@ class Panels {
 	public static function create() {
 
 		$options_page = \W6\Wp_Seo\Wp_Seo::instance()->titan->createAdminPanel( array(
-			'name' => __( 'W6 SEO', 'w6-wp-seo' ),
+			'name' => esc_html__( 'W6 SEO', 'w6-wp-seo' ),
 			'id'   => 'w6-wp-seo',
-			'desc' => __( 'Description displayed just below the title of this admin page.', 'w6-wp-seo' ),
+			'desc' => esc_html__( 'Description displayed just below the title of this admin page.', 'w6-wp-seo' ),
 			'icon' => 'dashicons-awards',
 		) );
 
