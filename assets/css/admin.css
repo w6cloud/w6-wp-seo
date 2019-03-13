@@ -1,0 +1,9 @@
+/* ADMIN PANELS */
+.titan-framework-panel-wrap form > .description {
+	background: #fff;
+	padding: 20px;
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+	border-bottom: 1px solid #eee;
+	margin: 0;
+}
