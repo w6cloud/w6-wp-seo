@@ -39,6 +39,11 @@ define( 'W6\Wp_Seo\VERSION', '1.0.0' );
 define( 'W6\Wp_Seo\ROOT', dirname( __FILE__ ) );
 
 /**
+ * Plugin root url (with trailing slash).
+ */
+define( 'W6\Wp_Seo\URL', plugin_dir_url( __FILE__ ) );
+
+/**
  * Functions
  */
 require_once 'libs/functions.php';
