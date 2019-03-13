@@ -50,8 +50,19 @@ class Wp_Seo {
 		if ( is_admin() ) {
 			Admin\Panels::init();
 			Admin\Metaboxes::init();
+			add_action( 'admin_enqueue_scripts', '\W6\Wp_Seo\Wp_Seo::admin_enqueue_scripts' );
 		} else {
 			Front_Post::init();
 		}
+	}
+
+	/**
+	 * admin_enqueue_scripts
+	 *
+	 * @return void
+	 */
+	public static function admin_enqueue_scripts() {
+		// Add admin CSS
+		wp_enqueue_style('admin-styles', \W6\Wp_Seo\URL . 'assets/css/admin.css');
 	}
 }
