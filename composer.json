@@ -1,23 +1,23 @@
 {
-    "name": "web6/wp-seo",
+    "name": "w6/wp-seo",
     "description": "Wordpress SEO plugin",
     "version": "1.0.0",
     "type": "wordpress-plugin",
     "keywords": ["wordpress", "wordpress-plugin", "seo"],
-    "homepage": "https://web6.fr",
+    "homepage": "https://web6.cloud",
     "readme": "README.md",
     "license": "GPL-3.0-only",
     "authors": [
         {
-            "name": "WEB6",
-            "email": "contact@web6.fr",
-            "homepage": "https://web6.fr",
+            "name": "WEB6 Cloud",
+            "email": "hello@web6.cloud",
+            "homepage": "https://web6.cloud",
             "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://github.com/web6-fr/w6-wp-seo/issues",
-        "docs": "https://github.com/web6-fr/w6-wp-seo/wiki"
+        "issues": "https://github.com/w6cloud/w6-wp-seo/issues",
+        "docs": "https://github.com/w6cloud/w6-wp-seo/wiki"
     },
     "require": {
         "php": ">=5.4",
